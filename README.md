@@ -3,27 +3,85 @@
 Welcome to the **SOLID Principles** teaching repository!  
 This repo provides clear and practical code examples demonstrating the **SOLID** principles of object-oriented design. For each principle, you will find **before** and **after** refactorings in two programming languages.
 
----
 
 ## What is SOLID?
 
 SOLID is an acronym for five key design principles that help developers write maintainable, extensible, and robust object-oriented code:
 
-- **S**ingle Responsibility Principle (SRP)  
-  A class should have only one reason to change, meaning it should have a single responsibility.
+---
 
-- **O**pen/Closed Principle (OCP)  
-  Software entities should be open for extension but closed for modification.
+### 🟡 S — Single Responsibility Principle (SRP)
 
-- **L**iskov Substitution Principle (LSP)  
-  Objects of a superclass should be replaceable with objects of subclasses without affecting the correctness of the program.
+> A class should have only one reason to change.
 
-- **I**nterface Segregation Principle (ISP)  
-  Clients should not be forced to depend on interfaces they do not use.
+**Advantages:**
+- Simplifies code by limiting class responsibilities.
+- Makes code easier to test and maintain.
+- Encourages separation of concerns.
 
-- **D**ependency Inversion Principle (DIP)  
-  High-level modules should not depend on low-level modules. Both should depend on abstractions.
+**Problems It Solves:**
+- Classes doing too much and becoming hard to change without affecting other behaviors.
+- Difficulties in testing or understanding code due to unrelated logic being mixed together.
 
+---
+
+### 🟣 O — Open/Closed Principle (OCP)
+
+> Software entities should be open for extension, but closed for modification.
+
+**Advantages:**
+- Encourages adding new behavior without touching existing code.
+- Minimizes regression bugs during feature additions.
+- Supports plugin-based and modular architecture.
+
+**Problems It Solves:**
+- Frequent changes to existing code leading to unintended side effects.
+- Code that isn’t adaptable or scalable due to hardcoded logic.
+
+---
+
+### 🔵 L — Liskov Substitution Principle (LSP)
+
+> Subtypes must be substitutable for their base types.
+
+**Advantages:**
+- Promotes reliable and predictable use of polymorphism.
+- Enhances reusability of components.
+- Improves interface consistency across class hierarchies.
+
+**Problems It Solves:**
+- Inheritance misuse where subclasses alter expected behavior.
+- Bugs that arise when a subclass cannot stand in for a parent class without breaking functionality.
+
+---
+
+### 🔴 I — Interface Segregation Principle (ISP)
+
+> Clients should not be forced to depend on interfaces they do not use.
+
+**Advantages:**
+- Encourages lean, purpose-specific interfaces.
+- Reduces unnecessary coupling between modules.
+- Simplifies implementation for classes using the interface.
+
+**Problems It Solves:**
+- "Fat" interfaces that force classes to implement unused methods.
+- Tight coupling between classes and unrelated functionality.
+
+---
+
+### 🟢 D — Dependency Inversion Principle (DIP)
+
+> High-level modules should not depend on low-level modules. Both should depend on abstractions.
+
+**Advantages:**
+- Promotes loosely-coupled architecture.
+- Enhances code reusability and flexibility.
+- Improves testability with dependency injection.
+
+**Problems It Solves:**
+- Rigid code that breaks when low-level details change.
+- Hard-to-test code due to direct dependency on concrete implementations.
 
 ---
 
