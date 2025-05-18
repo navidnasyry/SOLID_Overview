@@ -1,4 +1,4 @@
-# SOLID Principles - Code Examples in Two Languages
+# SOLID Principles - Code Examples
 
 Welcome to the **SOLID Principles** teaching repository!  
 This repo provides clear and practical code examples demonstrating the **SOLID** principles of object-oriented design. For each principle, you will find **before** and **after** refactorings in two programming languages.
